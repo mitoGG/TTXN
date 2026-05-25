@@ -3,19 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia</title>
+    <title>Barbearia Class</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1 class="titulo-principal"> Barbearia Class</h1>
+        <div class="header-container">
+            <h1 class="titulo-principal">Barbearia Class</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <img src="banner" alt="banner.jpg">
-    <div class="principal">
-        <h2 class="titulo-centralizado">Sobre a Barbearia</h2>
-        <p> Localizada no centro da cidade <strong>Barbearia Class</strong> traz ao mercado o que há de melhor.</p>
-        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong></em></p>
-        <p>Oferecemos profissionais experientes ao mundo capilar.</p>
-    </div>
+
+    <main>
+        <section class="banner-section">
+            <img src="banner.jpg" alt="Banner Barbearia Class" class="banner-img">
+        </section>
+
+        <section id="sobre" class="principal">
+            <h2 class="titulo-centralizado">Sobre a Barbearia</h2>
+            <p>Localizada no centro da cidade, a <strong>Barbearia Class</strong> traz ao mercado o que há de melhor para o seu estilo. Fundada com o objetivo de resgatar o atendimento personalizado, oferecemos um ambiente confortável e descontraído.</p>
+            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo capilar e da barba.</p>
+        </section>
+
+        <section id="contacto" class="Agendamento">
+            <h2 class="titulo-centralizado">Faça o seu Agendamento</h2>
+            <div class="botao-content">
+                <button id="botao-agendar">Verificar Disponibilidade</button>
+                <p id="mensagem-status" class="escondido"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Barbearia Class - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
